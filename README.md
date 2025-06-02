@@ -1,4 +1,4 @@
-# CV Fullstack - Juan Pérez
+# CV Fullstack - Fernando Martinez Marco
 
 Proyecto Fullstack con Node.js (Express) para servir:
 ✅ API RESTful con datos del CV.  
