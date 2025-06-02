@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const expList = document.querySelector("#experience ul");
       cv.experience.forEach((job) => {
         const li = document.createElement("li");
-        li.textContent = `${job.position} en ${job.company} (${job.startDate} - ${job.endDate})`;
+        li.textContent = `${job.position} at ${job.company} (${job.startDate} - ${job.endDate})`;
         expList.appendChild(li);
       });
 
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const projectsList = document.querySelector("#projects ul");
       cv.projects.forEach((project) => {
         const li = document.createElement("li");
-        li.innerHTML = `<strong>${project.name}:</strong> ${project.description} (<a href="${project.url}" target="_blank">Ver proyecto</a>)`;
+        li.innerHTML = `<strong>${project.name}:</strong> ${project.description} (<a href="${project.url}" target="_blank">View Project</a>)`;
         projectsList.appendChild(li);
       });
     })
-    .catch((err) => console.error("Error al cargar el CV:", err));
+    .catch((err) => console.error("Error loading CV:", err));
 });
