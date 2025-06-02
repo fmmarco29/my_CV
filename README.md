@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Fullstack CV - John Doe
+=======
+# CV Fullstack - Fernando Martinez Marco
+>>>>>>> a7e332aa57278b8a7393ab38dc44a41d0558f6bb
 
 Fullstack project using Node.js (Express) to serve:  
 - A RESTful API with CV data.  
@@ -17,7 +21,14 @@ npm start
 Visit http://localhost:3000 to see the frontend.
 
 ## 🌐 Endpoints
+<<<<<<< HEAD
 - `/api/cv` – Full CV data  
 - `/api/cv/experience` – Experience  
 - `/api/cv/skills` – Skills  
 - `/api/cv/projects` – Projects
+=======
+- `/api/cv` – CV completo.  
+- `/api/cv/experience` – Experiencia.  
+- `/api/cv/skills` – Habilidades.  
+- `/api/cv/projects` – Proyectos.
+>>>>>>> a7e332aa57278b8a7393ab38dc44a41d0558f6bb
