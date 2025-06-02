@@ -11,68 +11,68 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
-// Datos del CV
+// CV Data
 const cv = {
   basics: {
-    name: "Juan Pérez",
-    title: "Ingeniero Informático",
-    summary: "Ingeniero informático con experiencia en desarrollo full-stack, apasionado por la innovación y la eficiencia tecnológica.",
-    location: { city: "Madrid", country: "España" },
+    name: "Fernando Martinez Marco",
+    title: "Software Engineer",
+    summary: "Software engineer with full-stack expertise, passionate about modern technologies and delivering high-quality, scalable solutions.",
+    location: { city: "New York", country: "USA" },
     contact: {
-      email: "juan.perez@email.com",
-      phone: "+34 600 123 456",
-      website: "https://juanperez.dev",
-      linkedin: "https://www.linkedin.com/in/juanperez",
-      github: "https://github.com/juanperez"
+      email: "fernando.martinez@email.com",
+      phone: "+1 555 123 4567",
+      website: "https://fernandomartinez.dev",
+      linkedin: "https://www.linkedin.com/in/fernandomartinezmarco",
+      github: "https://github.com/fernandomartinezmarco"
     }
   },
   skills: [
-    { name: "Lenguajes de programación", keywords: ["JavaScript", "Python", "Java"] },
+    { name: "Programming Languages", keywords: ["JavaScript", "Python", "Java"] },
     { name: "Frameworks", keywords: ["React", "Node.js", "Express"] }
   ],
   experience: [
     {
-      company: "Tech Solutions",
-      position: "Desarrollador Full-Stack",
+      company: "Innovative Solutions Ltd.",
+      position: "Full-Stack Developer",
       startDate: "2021-01",
       endDate: "2024-06",
-      summary: "Desarrollo de aplicaciones web escalables con tecnologías modernas.",
+      summary: "Developed modern, scalable web applications and migrated legacy systems to microservices.",
       highlights: [
-        "Migración de sistemas monolíticos a microservicios.",
-        "Optimización del rendimiento y escalabilidad de aplicaciones."
+        "Improved application performance and scalability.",
+        "Led a team of developers for a major client project."
       ]
     }
   ],
   education: [
     {
-      institution: "Universidad de Tecnología",
-      degree: "Grado en Ingeniería Informática",
+      institution: "Technical University",
+      degree: "Bachelor's in Computer Science",
       startDate: "2015-09",
       endDate: "2019-06"
     }
   ],
   projects: [
     {
-      name: "Mi Portafolio",
-      description: "Página web personal con portafolio interactivo.",
-      url: "https://juanperez.dev",
+      name: "Personal Portfolio",
+      description: "A personal portfolio website showcasing my work and skills.",
+      url: "https://fernandomartinez.dev",
       technologies: ["HTML", "CSS", "JavaScript"]
     }
   ],
   languages: [
-    { language: "Español", fluency: "Nativo" },
-    { language: "Inglés", fluency: "Avanzado" }
+    { language: "English", fluency: "Fluent" },
+    { language: "Spanish", fluency: "Native" }
   ]
 };
 
-// Rutas API
+// API Routes
 app.get("/api/cv", (req, res) => res.json(cv));
 app.get("/api/cv/experience", (req, res) => res.json(cv.experience));
 app.get("/api/cv/skills", (req, res) => res.json(cv.skills));
 app.get("/api/cv/projects", (req, res) => res.json(cv.projects));
 
-// Servir Frontend
+// Serve Frontend
 app.use(express.static(path.join(__dirname, "public")));
 
-// Arranque del servidor
-app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));
+// Start Server
+app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));

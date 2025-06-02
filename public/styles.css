@@ -8,7 +8,6 @@ body {
   color: #333;
   background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 header {
   text-align: center;

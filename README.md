@@ -1,23 +1,23 @@
-# CV Fullstack - Juan Pérez
+# Fullstack CV - Fernando Martinez Marco
 
-Proyecto Fullstack con Node.js (Express) para servir:
-✅ API RESTful con datos del CV.  
-✅ Frontend HTML5/CSS3 puro, elegante y minimalista.  
+A fullstack project built with Node.js (Express) to serve:  
+- A RESTful API exposing CV data.  
+- A minimalist, modern frontend using HTML5 and pure CSS3.
 
-## 🚀 Despliegue en Railway
-1️⃣ Sube el proyecto a GitHub.  
-2️⃣ Conéctalo en Railway y selecciona "Deploy from GitHub".  
-3️⃣ Railway detectará `index.js` y desplegará automáticamente.  
+## Deployment on Railway
+1. Push this project to GitHub.  
+2. Connect your GitHub repository on Railway and select "Deploy from GitHub".  
+3. Railway will automatically detect `index.js` and deploy the application.
 
-## 📦 Uso local
+## Local Setup
 ```
 npm install
 npm start
 ```
-Luego visita http://localhost:3000 para ver el frontend.
+Visit http://localhost:3000 to view the frontend.
 
-## 🌐 Endpoints
-- `/api/cv` – CV completo.  
-- `/api/cv/experience` – Experiencia.  
-- `/api/cv/skills` – Habilidades.  
-- `/api/cv/projects` – Proyectos.
+## API Endpoints
+- `/api/cv` – Complete CV data  
+- `/api/cv/experience` – Experience section  
+- `/api/cv/skills` – Skills section  
+- `/api/cv/projects` – Projects section

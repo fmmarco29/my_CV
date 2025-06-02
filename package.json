@@ -1,7 +1,7 @@
 {
   "name": "cv-fullstack",
   "version": "1.0.0",
-  "description": "API RESTful + Frontend para el CV de Juan Pérez",
+  "description": "Fullstack CV API and Frontend for Fernando Martinez Marco",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
